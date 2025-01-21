@@ -28,6 +28,17 @@ const Home = async () => {
   const menuData = await getMenuData();
   return (
       <main className="flex-grow p-4 bg-gray-800">
+        <div className="flex justify-between items-center mb-4 bg-gray-700 rounded border border-gray-300 p-4">
+          <p className="text-base text-gray-200 bold">Questi dati risalgono a: {new Date().toLocaleString("it-IT")}.</p>
+          <form method="get" action="">
+            <button 
+              type="submit" 
+              className="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+              Ricarica pagina
+            </button>
+          </form>
+        </div>
         {menuData.map((section) => (
           <Section key={section.title} section={section} />
         ))}

@@ -23,7 +23,7 @@ export default function RootLayout({
             </header>
           {children}
           <footer className="bg-gray-700 text-center py-4">
-            <p>
+            <p className="mb-3 mt-1">
               Made with ❤️ by{" "}
               <a href="https://vitto.dev" target="_blank" rel="noopener noreferrer" className="text-blue-500">
                 Vittorio Lo Mele
